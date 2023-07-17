@@ -16,7 +16,7 @@ function App() {
           rel="noopener noreferrer"
           data-testid="learn-link"
         >
-          Learn React from Sketch I am Banuka
+          Learn React from Sketch I am Banuka US
         </a>
       </header>
     </div>

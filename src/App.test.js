@@ -5,7 +5,7 @@ import App from './App';
   
     test('renders correctly', () => {
       render(<App />);
-        const textElement = screen.getByText('Learn React from Sketch I am Banuka');
+        const textElement = screen.getByText('Learn React from Sketch I am Banuka US');
         expect(textElement).toBeInTheDocument();
     });
 
