@@ -1,18 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-// describe("App", () =>{
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
   
-    test('renders correctly', () => {
-      render(<App />);
-        const textElement = screen.getByText('Learn React from Sketch I am Banuka US');
-        expect(textElement).toBeInTheDocument();
-    });
+  hbbnbbn
+});
 
-    test('Check URL', () =>{
-      render(<App />);
-        const linkedElement = screen.getByTestId('learn-link');
-        expect(linkedElement.href).toContain('reactjs.org');
-    });
-
-//});
+test('Try the link', () => {
+  render(<App/>);
+    const link = screen.getByTestId('link');
+    expect(link.href).toContain('reactjs.org');
+})
