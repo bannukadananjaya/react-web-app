@@ -6,11 +6,10 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
   
-  hbbnbbn
 });
 
 test('Try the link', () => {
   render(<App/>);
-    const link = screen.getByTestId('link');
+    const link = screen.getByTestId('learn-link');
     expect(link.href).toContain('reactjs.org');
 })
